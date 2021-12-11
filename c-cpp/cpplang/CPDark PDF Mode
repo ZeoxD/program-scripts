@@ -1,0 +1,75 @@
+- pointer and reference vars
+- class templates
+- lvalue and rvalue
+- lambda syntax
+- move semantics
+- smart pointers
+- multithreading
+- memory management
+- application security (design and deployment)
+- application security (memory and os level processes)
+- low level programming (the true power of c++)
+- connecting to databases
+- communicating with the web; physical devices; and other applications
+- platform specific considerations
+- optimizing application and compilation
+- industry best practices and design patterns
+- pitfalls to avoid, organizing large amounts of code
+- making applications production ready
+- versioning
+
+
+
+PDF dark mode
+
+var cover = document.createElement("div");
+let css = `
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    mix-blend-mode: difference;
+    z-index: 1;
+`
+cover.setAttribute("style", css);
+document.body.appendChild(cover);
+
+
+//good mode for eyes
+
+var colors = document.querySelectorAll("div");
+
+for ( i=0; i < colors.length; i++ ) {
+colors[i].style.background = "#a5bccf";
+}
+
+document.querySelector("body").style.background = "#a5bccf";
+
+var font = document.querySelectorAll("p");
+
+for ( i = 0 ; i < font.length ; i++ ) {
+font[i].style.fontWeight = "480";
+font[i].style.fontSize = "118%";
+}
+
+
+-881638445511486489
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

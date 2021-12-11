@@ -1,0 +1,6 @@
+hello this is a text to be read by my cpp program. this file will be saved in txt format. 
+this file will be read through file input and output system of cpp. this will be done through 
+the fstream header file of cpp library. my cpp program will use different functions of fstream and 
+iostream to read , write and modify the files. the files read through these fuctions and with the help of
+fstream can be shown to console through iostream header file and the functions provided 
+through the header file.

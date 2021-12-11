@@ -1,0 +1,120 @@
+#include<stdio.h>
+
+
+int q[50]={0};
+
+int r=-1;
+int f=-1;
+
+
+// insert
+void insert()
+{
+    int x;
+    if(r==49)
+    {
+        printf("queu is full\n");
+        return;
+    }
+    else 
+    {
+        if(f==-1)
+        f=0;
+
+
+        printf("enter element\n");
+        scanf("%d",&x);
+        r+=1;
+        q[r]=x;
+
+
+        
+    }
+    
+
+
+}
+// delete
+void  Delete()
+{
+    if(f==-1 && r==-1)
+    {
+        printf("empty\n");
+    }
+    else if (f==r)
+    {
+        f=-1;r=-1;
+        
+    }
+    else
+    {
+        f+=1;
+    }
+    
+
+
+}
+// display
+void display()
+{
+
+
+  if(f==-1)
+  {
+     printf("empty\n");
+      return;
+  }
+  else
+  {
+      printf("queue  is :\n");
+      for(int i=f;i<=r;i++)
+      printf("%d ",q[i]);
+
+
+      printf("\n");
+  }
+  
+}
+
+
+// main
+int main()
+{
+    int choice;
+
+
+    while(1)
+    {
+        printf("1. insert\n");
+        printf("2.delete\n");
+        printf("3.display\n");
+        
+        printf("enter your choice\n");
+        scanf("%d",&choice);
+
+
+        switch(choice)
+        {
+            case 1:
+            insert();
+            break;
+            case 2:
+            Delete();
+            break;
+            case 3:
+            display();
+            break;
+           
+           
+          
+        }
+
+
+
+    }
+
+
+    return 0;
+
+
+}
