@@ -4,7 +4,7 @@ class Input{
 	public static void main(String[] args) throws IOException {
 		DataInputStream ds = new DataInputStream(System.in);
 		String name = ds.readLine();
-		int salary = ds.readInt();
+		String salary = ds.readLine();
 		System.out.println("Name: " + name + "\nSalary: " + salary);
 	}
 }
