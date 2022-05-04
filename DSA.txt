@@ -1,0 +1,58 @@
+||-------------------||
+||--Data Structures--||
+||-------------------||
+
+Array
+String
+Matrix
+Linked List 
+Stack
+Queue
+Binary tree
+Binary search tree
+Avl tree
+Red black tree
+Heap 
+Trie
+ - Segment Tree
+ - Fenwick Tree
+ - Suffix Tree
+ - Suffix Array
+ - Prefix Sum Array
+
+
+||-------------------||
+||----Algorithms-----||
+||-------------------||
+
+Searching
+Sorting
+ - Bubble Sort
+ - Selection Sort
+ - Insertion Sort
+ - Quick Sort
+ - Merge Sort
+ - Heap Sort
+ - Counting Sort
+ - Radix Sort
+Graphs Representation
+ - Adjacency Matrix
+ - Incidence Matrix
+ - Adjacency List
+Graph Traversal
+ - BFS
+ - DFS
+Single Source Shortest Path
+All Pair Shortest Path
+Spanning Tree
+Maximum Flow
+Connected Components
+Articulation Points and Bridges
+Bipartite Graph
+
+||-------------------||
+||-----Advanced------||
+||-------------------||
+
+Backtracking
+Dynamic Programming
