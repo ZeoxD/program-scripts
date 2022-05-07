@@ -3,8 +3,8 @@
 All the Program scripts in this Github Repository.
 <<<<<<< HEAD
 
-PAT : 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
+PAT : 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
 =======
-Github Token : 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
-Origin : git remote add origin https://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@github.com/zeoxd/program-scripts.git/
+Github Token : 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
+Origin : git remote add origin https://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@github.com/zeoxd/program-scripts.git/
 >>>>>>> develop
