@@ -21,23 +21,22 @@
                     cor = cor*10 + (int(co)-48);
                 }
             }
-
-            if(cur>60) {
-                cur -= 40;
+            
+            if(cur == cor) {
+                return 0;
             }
+            
+            cor = cor - cur;
 
-            cur -= cur/100 * 40;
+
+            if(cor>100) {
+                cor -= cor/100 * 40;
+            }
             
             if(cor>60) {
                 cor -= 40;
             }
 
-            cor -= cor/100 * 40;
-
-            if(cur == cor) {
-                return 0;
-            }
-            cor = cor - cur;
             cur = 0;
 
             while(cor > 0) {
