@@ -21,14 +21,12 @@ public:
             rsum[i] = rsum[i+1] + n[i];
         }
 
-        for(const auto &l: lsum) {
-            cout<<l<<" ";
-        }
-        cout<<endl;
-        for(const auto &r: rsum) {
-            cout<<r<<" ";
+        for(int i = 0; i < size; i++) {
+            if(lsum[i] == rsum[i]) {
+                return i;
+            }
         }
 
-        return 1;
+        return -1;
     }
 };
