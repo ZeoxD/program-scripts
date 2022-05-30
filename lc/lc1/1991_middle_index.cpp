@@ -8,22 +8,27 @@ public:
     int findMiddleIndex(vector<int>& n) {
         
         int size = n.size();
-        int l = n[0], r = n[size-1];
+        vector<int> lsum(size);
+        vector<int> rsum(size);
 
-        int i, j;
-        for(i = 0, j = size-1; i <= j; ) {
-
-            if(l < r) {
-                l += n[++i];
-            }
-            else if(l > r) {
-                r += n[--j];
-            }
-            
-            if(l == r && i == j) {
-                return i;
-            }
+        lsum[0] = n[0];
+        for(int i = 1; i < size; i++) {
+            lsum[i] = lsum[i-1] + n[i];
         }
-        return -1;
+
+        rsum[size-1] = n[size-1];
+        for(int i = size-2; i >= 0; i--) {
+            rsum[i] = rsum[i+1] + n[i];
+        }
+
+        for(const auto &l: lsum) {
+            cout<<l<<" ";
+        }
+        cout<<endl;
+        for(const auto &r: rsum) {
+            cout<<r<<" ";
+        }
+
+        return 1;
     }
 };
