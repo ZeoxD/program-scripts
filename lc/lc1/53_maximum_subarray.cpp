@@ -14,8 +14,8 @@ public:
             if(sum < 0) {
                 sum = 0;
             }
-            sum += nums[i];
             
+            sum += nums[i];
             if(sum > max) {
                 max = sum;
             }
