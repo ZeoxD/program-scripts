@@ -13,12 +13,21 @@ public:
         int i = 0;
 
         while(i <= len/2 && i != j) {
-            if(nums[i] + nums[j] > target) {
-                j--;
-            }
-            if(nums[i] + nums[j] < target) {
+
+            if(nums[i] + nums[j] > target && nums[i] < nums[j]) {
                 i++;
             }
+            else if(nums[i] + nums[j] > target && nums[i] > nums[j]) {
+                j--;
+            }
+
+            if(nums[i] + nums[j] < target && nums[i] < nums[j]) {
+                i++;
+            }
+            else if( nums[i] + nums[j] < target && nums[i] > nums[j] ) {
+                j--;
+            }
+
             if(nums[i] + nums[j] == target) {
                 res.push_back(i);
                 res.push_back(j);

@@ -18,5 +18,38 @@ public:
                 dvtr[moves[i][0]][moves[i][1]] = 0;
             }
         }
+        int row = 0, col = 0, diag = 0, antidiag = 0;
+        for(int i = 0; i<3; i++) {
+            for(int j = 0; j<3; j++) {
+                row += dvtr[i][j];
+                col += dvtr[j][i];
+            }
+
+            diag += dvtr[i][i];
+            antidiag += dvtr[i][2-i];
+
+            if(row == 3 || col == 3) {
+                return "A";
+            }
+            else if(row == 0 || col == 0) {
+                return "B";
+            }
+
+            row = 0;
+            col = 0;
+        }
+
+        if(diag == 3 || antidiag == 3) {
+            return "A";
+        }
+        else if(diag == 0 || antidiag == 0) {
+            return "B";
+        }
+
+        if(size < 9) {
+            return "Pending";
+        }
+
+        return "Draw";
     }
 };
