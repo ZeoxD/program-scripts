@@ -6,17 +6,15 @@ class Solution {
 public:
     void reverseString(vector<char>& s) 
     {
-        if(s.size() == 0)
-        {
-            return;
-        }
-        reverseString();
+        int size = s.size();
+        vector<char> snew(size);
 
+        for(int i = size-1; i>=0; i--) {
+            snew[(size-1)-i] = s[i];
+        }
+
+        for(int i = 0; i< size; i++) {
+            s[i] = snew[i];
+        }
     }
 };
-
-int main(){
-    Solution sl;
-    vector<char> vtr = {'h', 'e', 'l'};
-    sl.reverseString(vtr);
-}
