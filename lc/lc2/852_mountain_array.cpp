@@ -21,9 +21,9 @@ public:
             }
 
             if(ptra == ptrb) {
-                return 1;
+                return ptra;
             }
-            else if(arr[ptra] > arr[ptra+1] || arr[ptrb-1] > arr[ptrb]) {
+            else if(arr[ptra] > arr[ptra+1] && arr[ptrb-1] < arr[ptrb]) {
                 return 0;
             }
 
