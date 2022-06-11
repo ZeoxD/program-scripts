@@ -6,18 +6,21 @@ using namespace std;
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
-        double ans = 0.0f;
-        double sum = 0.0f;
+        long sum = 0, ans = 0;
         int size = nums.size();
 
-        for(int i = 0; i < size-k; i++) {
-            sum = 0;
-            for(int j = i; j < k; j++) {
-                sum += nums[i+j];
-            }
-            ans = max(ans, double(sum/(k)));
+        for(int i = 0; i < k; i++) {
+            sum += nums[i];
         }
 
-        return ans;
+        ans = sum;
+
+        for(int i = 1; i<size-k + 1; i++) {
+            sum += nums[k+(i-1)] - nums[i-1];
+            ans = max(ans, sum);
+        }
+
+
+        return ans/(k*1.0);
     }
 };
