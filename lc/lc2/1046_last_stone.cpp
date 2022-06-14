@@ -11,14 +11,18 @@ public:
 
         int val;
         while(stones.size() > 1) {
-            int size = stones.size();
-            if(stones[size] != stones[size-1]) {
-                val = stones[size] - stones[size-1];
+            int size = stones.size()-1;
+            
+            val = abs(stones[size] - stones[size-1]);
+            
+            stones.pop_back();
+            stones.pop_back();
+            
+            if(val || stones.size()==0) {
+                stones.push_back(val);
             }
-            stones.pop_back();
-            stones.pop_back();
-
-            stones.push_back(val);
+            
+            sort(stones.begin(), stones.end());
         }
 
         return stones[0];
