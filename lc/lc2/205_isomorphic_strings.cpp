@@ -13,13 +13,13 @@ public:
         int size = s.size();
 
         for(int i = 0; i < size; i++) {
+
+            if(uma[s[i]]) {
+                return false;
+            }
             
             uma[s[i]] = t[i];
             umb[t[i]] = s[i];
-
-            if(s[i] != umb[uma[s[i]]] or t[i] != uma[umb[t[i]]]) {
-                return false;
-            }
 
         }
 
