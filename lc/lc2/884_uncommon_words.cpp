@@ -8,13 +8,39 @@ using namespace std;
 class Solution {
 public:
     vector<string> uncommonFromSentences(string s1, string s2) {
-        int len1 = s1.length();
-        int len2 = s2.length();
         unordered_map<string, int> um;
         vector<string> vtr;
 
-        for(int i = 0; i < len1; i++) {
-            
+        string word = "";
+        for(auto c1: s1) {
+            if(c1 == ' ') {
+                um[word]++;
+                word = "";
+            }
+            else {
+                word += c1;
+            }
         }
+        um[word]++;
+
+        word = "";
+        for(auto c2: s2) {
+            if(c2 == ' ') {
+                um[word]++;
+                word = "";
+            }
+            else {
+                word += c2;
+            }
+        }
+        um[word]++;
+
+        for(auto it = um.begin(); it != um.end(); it++) {
+            if(it->second == 1) {
+                vtr.push_back(it->first);
+            }
+        }
+
+        return vtr;
     }
 };
