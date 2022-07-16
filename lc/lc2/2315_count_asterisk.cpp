@@ -16,11 +16,10 @@ public:
                 if(!pipe && s[i] == '*')  {
                     ++aster;
                 }
-
-                
             }
+            
         }
-
+        return aster;
 
     }
 };
