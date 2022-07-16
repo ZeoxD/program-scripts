@@ -17,6 +17,7 @@ public:
                 return digits;
             }
         }
+        
         digits[0] = 1;
         digits.push_back(0);
 
