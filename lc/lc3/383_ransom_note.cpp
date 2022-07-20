@@ -18,6 +18,13 @@ public:
             mm[m]++;
         }
 
+        for(auto it = rm.begin();  it != rm.end(); it++) {
+            if(it->second != mm[it->first]) {
+                return false;
+            }
+        }
+
+        return true;
         
     }
 };
