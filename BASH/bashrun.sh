@@ -4,8 +4,11 @@ echo "my bash script"
 
 echo "I am in $(pwd)"
 
-for i in {0..10}
+num=1
+
+for i in {1..11}
 do
-  echo "Number: $i"
+  num=$((num*i))
+  echo "Number: $num"
 done
 	 
