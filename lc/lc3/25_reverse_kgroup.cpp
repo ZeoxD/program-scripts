@@ -13,22 +13,20 @@ class Solution
 public:
     ListNode* reverse(ListNode* head, ListNode* tail)
     {
-        if(!head->next) return head;
-        auto c = head;
-        head = head->next;
+        ListNode* prev = tail;
         while(head != tail) {
             auto t = head->next;
-            head->next = c; c = head; head = t;
+            head->next = prev;
+            prev = head;
+            head = t;
         }
-        head->next = c;
-        return head;
+        return prev;
     }
     
     
     ListNode* reverseKGroup(ListNode* head, int k) 
     {
         auto node=head;
-        int count = 0;
         for (int i=0; i < k; ++i)
         {
             if(!node) return head;
