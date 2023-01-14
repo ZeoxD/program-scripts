@@ -6,5 +6,5 @@ All the Program scripts in this Github Repository.
 Previous Git Token : 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
 =======
 Github Token : _4mnkberhM811uDblMfjlczpXp3Toof2ssO19_ 
-Origin : git remote add origin https://_4mnkberhM811uDblMfjlczpXp3Toof2ssO19@github.com/zeoxd/program-scripts.git/
+Origin : git remote add origin https://[ghp]_4mnkberhM811uDblMfjlczpXp3Toof2ssO19@github.com/zeoxd/program-scripts.git/
 >>>>>>> develop
