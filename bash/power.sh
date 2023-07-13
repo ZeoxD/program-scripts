@@ -5,4 +5,4 @@ for((i = 0; i<p; i++))
 do
 	num=$((num*n))
 done
-echo $num
+echo "$n ^ $p = $num"
