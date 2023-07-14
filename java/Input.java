@@ -1,10 +1,11 @@
 import java.io.*;
+import java.util.Scanner;
 
 class Input{
 	public static void main(String[] args) throws IOException {
-		DataInputStream ds = new DataInputStream(System.in);
-		String name = ds.readLine();
-		String salary = ds.readLine();
+		Scanner scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		int salary = scan.nextInt();
 		System.out.println("Name: " + name + "\nSalary: " + salary);
 	}
 }
