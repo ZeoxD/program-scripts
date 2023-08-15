@@ -21,7 +21,7 @@ public:
                 right = right->next;   
             }
             iter = iter->next;
-        }c
+        }
         
         int temp = left->val;
         left->val = right->val;
