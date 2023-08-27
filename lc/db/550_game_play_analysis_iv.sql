@@ -6,3 +6,4 @@ FROM Activity
 GROUP BY player_id) AS a LEFT JOIN Activity AS b 
 ON a.player_id = b.player_id 
 AND a.event_date+1 = b.event_date
+
